@@ -9,6 +9,11 @@ console.log(domisili , typeof domisili);
 const umur1 = 20;
 console.log(umur1, typeof umur1);
 
+// number(menggunakan koma)
+let umur3 = 20.88;
+let umur4 = parseFloat(umur3);
+console.log(umur4, typeof umur4);
+
 // boolean
 const isMarried = false;
 console.log(isMarried, typeof isMarried);
