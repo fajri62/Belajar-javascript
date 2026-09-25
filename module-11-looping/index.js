@@ -6,6 +6,16 @@ for (let i = 0; i <= 5; i++) {// pengulangan akan berhenti jika i <= 5 bernilai 
     console.log(`nomor ${i}`);
 }
 
+let buah = ["Apel", "Pisang", "Jeruk"];
+
+for (let i = 0; i < buah.length; i++) {
+    console.log(i, buah[i]); // Menampilkan indeks dan nilainya
+}
+// Output:
+// 0 "Apel"
+// 1 "Pisang"
+// 2 "Jeruk"
+
 // penggunaan nyata for
 const pinBenar = "5432"; // PIN rahasia yang dicari
 
@@ -30,15 +40,36 @@ while (j <= 5) {
 }
 
 // penggunaan nyata while
-let password = "";
-while (password !== "12345") {
-    password = prompt("Masukkan password:"); // Kita tidak tahu berapa kali pengguna akan salah mengetik
-}// Mengulang terus sampai pengguna memasukkan password yang benar
+// let password = "";
+// while (password !== "1") {
+//     password = prompt("Masukkan password:"); // Kita tidak tahu berapa kali pengguna akan salah mengetik
+// }// Mengulang terus sampai pengguna memasukkan password yang benar
+
 
 // do while loop, mengulangkan kode jika kondisi bernilai true
 
-let k = 0;
+let k = 6; //walaupun 6 > 5 tetapi tetap di cetak 1 kali, berbeda dengan while dia tidak akan dicetak karena 6 > 5
 do {
-    console.log("test" + k);
+    console.log("do-while" + k);
     k++;
 } while (k <= 5);
+
+
+// for in loop
+const object = {nama: "dimas",umur: 25,};
+
+for (let property in object) {
+    console.log(property);// menampilkan semua properti yang ada di object seperti nama, umur
+    console.log(object[property]);// menampilkan nilai dari properti yang kita cari seperti dimas, 25
+}
+
+
+// for of loop
+const array = ["a", "b", "c"];
+for (let item of array) {
+    console.log(item);
+}
+// Output:
+// a
+// b
+// c
